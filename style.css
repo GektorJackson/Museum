@@ -1,0 +1,118 @@
+* {
+ font-family: Roboto;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.header {
+    width: 100%;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav {
+    width: 1920px;
+    display: flex;
+    margin: 90px auto 0 auto; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-family: Forum;
+    font-size: 36px;
+    font-weight: 300;
+    color: white;
+    font-family: Roboto;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 90px;
+}
+
+.nav-menu li a {
+    font-family: Roboto ;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 200;
+    color:white;
+    transition: color 0.3s;
+}
+
+.nav-menu li a:hover {
+  color: #d00000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.welcome {
+    width: 1920px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: white;
+    padding: 0;
+    margin-top: 0;
+    padding-top: 0;
+
+}
+
+
+.welcome-content {
+    padding-left: 160px;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.welcome-title {
+    font-family: Roboto;
+    font-size:72px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 20px;
+
+}
+
+.welcome-subtitle {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.welcome-button {
+    width: 260px;
+    height: 60px;
+    background-color: #9d0208;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+
+}
+
+.welcome__image img {
+  height: 100vh;
+  width: auto;
+  object-fit: cover;
+  display: block;
+}
+
+
