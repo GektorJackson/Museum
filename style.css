@@ -1,29 +1,53 @@
 * {
- font-family: Roboto;
+box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
 .header {
     width: 100%;
     background-color: #000;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #000;
+}
+
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
 .nav {
-    width: 1920px;
-    display: flex;
-    margin: 90px auto 0 auto; 
-    justify-content: space-between;
-    align-items: center;
+  position: absolute;
+  top: 90px; 
+  left: 40;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  font-size: 16px;
+  z-index: 10;
 }
 
 .nav-logo {
     font-family: Forum;
     font-size: 36px;
+    margin-right: 25px;
     font-weight: 300;
     color: white;
     font-family: Roboto;
@@ -31,15 +55,16 @@
 
 .nav-menu {
     list-style: none;
+    gap: 50px;
     display: flex;
-    gap: 90px;
 }
 
 .nav-menu li a {
     font-family: Roboto ;
     text-decoration: none;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 200;
+    letter-spacing: 2px;
     color:white;
     transition: color 0.3s;
 }
@@ -54,65 +79,101 @@ html {
 
 
 .welcome {
-    width: 1920px;
+    width:100%;
     height: 100vh;
-    margin: 0 auto;
+    font-family:Forum;
+    font-size: 40px;
+    line-height: 40px;
+    position: relative;
+    letter-spacing: 2px;
+    font-weight: 200;
+    margin: 100px auto 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
     background-color: #000;
     color: white;
     padding: 0;
-    margin-top: 0;
-    padding-top: 0;
+    padding-top: 0;  
+    margin-top: 100px; 
+    overflow: hidden;
 
+}
+
+.welcome-iiner {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 20px;
+    position: relative;
+    overflow: hidden;
 }
 
 
 .welcome-content {
-    padding-left: 160px;
-    max-width: 700px;
+    padding-left: 40px;
+    max-width: 600px;
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
+    z-index: 1;
 }
 
 
 
 .welcome-title {
-    font-family: Roboto;
+    font-family: forum;
     font-size:72px;
+    font-weight: 400;
     text-transform: uppercase;
+    letter-spacing: 5px;
     line-height: 1.2;
     margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
 
+}
+
+.nowrap {
+  white-space: nowrap;
 }
 
 .welcome-subtitle {
-    font-size: 24px;
-    margin-bottom: 40px;
+    font-family: Roboto;
+    font-size: 23px;
+    margin-bottom: 80px;
+    letter-spacing: 2px;
+    line-height: 29px;
+    position: relative;
+    z-index: 1;
 }
 
 .welcome-button {
-    width: 260px;
-    height: 60px;
+    font-family: Roboto;
+    width: 360px;
+    height: 75px;
     background-color: #9d0208;
     color: white;
     font-size: 18px;
-    border-radius: 8px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    border-radius: 9px;
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 10px;
 
 }
 
-.welcome__image img {
-  height: 100vh;
-  width: auto;
-  object-fit: cover;
-  display: block;
+.welcome-img img {
+  height: 740px;
+  position: relative;
+  object-fit: contain;
+  margin-left: -250px;
+  z-index: 0;
 }
 
 
