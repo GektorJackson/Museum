@@ -177,3 +177,103 @@ html {
 }
 
 
+.virtual-tour  {
+  font-family: 'Forum';
+  margin-top: 20px;
+  background-color: #fff;
+  text-align: left; 
+  text-transform: uppercase;
+  padding: 80px 0;
+
+}
+
+
+.virtual-tour-title {
+  font-size: 80px;
+  font-weight: 100;
+  color:#a08856;
+  letter-spacing: 5px;
+  text-transform:uppercase;
+  margin-bottom: 40px;
+  margin-left: 220px;
+  position: relative;
+  display: inline-block;
+}
+
+.virtual-tour-title::after {
+  content: '';
+  display: block;
+  width:1350px;
+  height:3px;
+  background-color: #6d0f0f;
+  margin: 70px 10 auto; 
+  margin-left: 5px;
+  margin-top: 25px;
+}
+
+.virtual-tour-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 80px  ;
+  max-width: 1350px;
+  margin: 0  auto;
+  margin-top: 20px;
+}
+
+.virtual-tour-card {
+  display:block;
+  text-decoration: none;
+  color:inherit;
+  text-align: left;
+  transition: transform 0.3 ease;
+}
+
+.virtual-tour-card :hover {
+  transform: scale(1.03);
+}
+
+.virtual-tour-card img {
+  width: 100%;
+  height:auto;
+  display: block;
+  border-radius: 4px;
+  margin-bottom: 30px;
+
+
+}
+
+.virtual-tour-card h3 {
+  font-family: 'Forum';
+  font-size: 27px;
+  font-weight: 200;
+  letter-spacing: 6px;
+  line-height: 10px;
+  margin: 20px 0  5px;
+  color: #111;
+}
+
+.virtual-tour-card .underline {
+  display: block;
+  line-height: 20px;
+  width: 250px;
+  height: 2px;
+  background-color: #8b0000;
+  margin: 5px 0 10px;
+  margin-top: 20px;
+}
+
+.virtual-tour-card p {
+  font-family: 'Roboto';
+  font-weight: 200;
+  margin: 0;
+  font-size: 15px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.virtual-tour-card .subtitle {
+  font-family: Roboto;
+  font-size: 16px;
+  color: #999;
+}
+
