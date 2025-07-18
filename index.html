@@ -100,6 +100,7 @@
             </div>
            </section>
 
+
            <section  class="picture-explore" id="explore">
             <div class="text-content">
               <h3>Picture explore</h3>
@@ -112,12 +113,49 @@
                 <img src="after.jpg" alt="Las Meninas">
             </div>
            </section>
+
+
            <section class="video" id="video">
-            <div class="vide-header">
+            <div class="video-header">
               <h2 class="video-jorney">Video journey</h2>
               <p class="video-content">Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code </p> 
             </div>
+              
+          <div class="video-playaer-wrapper">
+            <video class="video-player" src="video0.mp4" poster="poster0.jpg" muted></video>
+          </div>
 
+          <div class="controls-container">
+            <button  class="btn-ctrl-play"></button>
+            <input type="range" class="ctrl-progress" min="0" max="100" value="0">
+            <button class="btn ctrl-volume"></button>
+            <input type="range" class="ctrl-vol-range" min="0" max="100" value="50">
+            <button class="btn ctrl-fullscreen">⛶</button>
+           </div>
+          </div>
+
+          <div class="video-courousel">
+
+             <div class="carousel-item">
+               <iframe src="video1.mp4" poster="poster1" frameborder="0" allowfullscreen></iframe>
+               </div>
+              <div class="carousel-item">
+               <iframe src="video2.mp4" poster="poster2"frameborder="0" allowfullscreen></iframe>
+             </div>
+
+            <div class="carousel-item">
+             <iframe src="video3.mp4" poster="poster3"frameborder="0" allowfullscreen></iframe>
+             </div>
+           </div>
            </section>
       </main>
+      <script>
+  const video = document.querySelector('.video-player');
+  const playBtn = document.querySelector('.btn-play');
+
+  playBtn.addEventListener('click', () => {
+    video.play();
+    playBtn.style.display = 'none';
+  });
+</script>
 </body> 
